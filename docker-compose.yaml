@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  talker:
+    build: .
+    command: ["ros2", "run", "py_pubsub", "talker"]
+  listener:
+    build: .
+    command: ["ros2", "run", "py_pubsub", "listener"]
